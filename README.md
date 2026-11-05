@@ -21,7 +21,7 @@ Python 3 (standard library), plain HTML, CSS and JS, deployed to a static host.
 ## Run it
 
 ```bash
-git clone https://github.com/Hulkmode85/elite-agentic-solutions-site
+git clone https://github.com/iskra-astudillo/elite-agentic-solutions-site
 cd elite-agentic-solutions-site
 python3 build_site.py
 python3 build_aml_toolkit_pdf.py   # optional: regenerate the PDF

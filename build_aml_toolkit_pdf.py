@@ -10,7 +10,7 @@ from reportlab.platypus import (
 from reportlab.lib.enums import TA_LEFT, TA_CENTER
 from pathlib import Path
 
-OUT = Path("/Users/berylusllc/elite-agentic-solutions-site/downloads/lead_magnet_aml_toolkit.pdf")
+OUT = Path(__file__).resolve().parent / "downloads" / "lead_magnet_aml_toolkit.pdf"
 
 PRIMARY = HexColor("#8B5CF6")
 ACCENT = HexColor("#00D4AA")

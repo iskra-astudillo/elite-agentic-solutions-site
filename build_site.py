@@ -6,9 +6,9 @@ import shutil
 import markdown
 from pathlib import Path
 
-SITE_ROOT = Path("/Users/berylusllc/elite-agentic-solutions-site")
-DOWNLOADS = Path("/Users/berylusllc/Downloads")
-VAULT = Path("/Users/berylusllc/Documents/Obsidian Vault/elite-agentic-master-package")
+SITE_ROOT = Path(__file__).resolve().parent
+DOWNLOADS = Path.home() / "Downloads"
+VAULT = Path(os.environ.get("EAS_VAULT", Path.home() / "Documents/Obsidian Vault/elite-agentic-master-package"))
 
 # Tracking pixel / analytics snippet (shared with elite-ai-empire-site)
 HEAD_TRACKING = """<!-- Google Analytics (GA4) -->
@@ -420,7 +420,7 @@ def build_compare_waystar(out_file):
 
     <h2>Real Numbers</h2>
     <ul>
-      <li><strong>$47,000+ recovered per deployment</strong> in systematically reworked denials that billing staff had deprioritized.</li>
+      <li><strong>Recover denied-claim revenue</strong> by systematically reworking denials that billing staff had deprioritized.</li>
       <li><strong>73% reduction</strong> in denial rates by pre-submission agentic validation.</li>
       <li><strong>95% time savings</strong> on prior auth processing, ERA reconciliation, and denial rework.</li>
       <li><strong>Weeks to ROI</strong> &mdash; the first recovered denial pays for the deployment.</li>
